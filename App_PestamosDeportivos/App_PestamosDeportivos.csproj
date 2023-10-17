@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CLS_Conexion.cs" />
+    <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_Modulo_Usuario.cs" />
     <Compile Include="Frm_Modulo_Usuarios.cs">
       <SubType>Form</SubType>
@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Modulo_Usuarios.resx">
+      <DependentUpon>Frm_Modulo_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

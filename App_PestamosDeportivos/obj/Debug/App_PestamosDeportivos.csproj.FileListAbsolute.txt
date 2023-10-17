@@ -1,0 +1,5 @@
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.Frm_Modulo_Usuarios.resources
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.Properties.Resources.resources
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.GenerateResource.cache
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.CoreCompileInputs.cache
