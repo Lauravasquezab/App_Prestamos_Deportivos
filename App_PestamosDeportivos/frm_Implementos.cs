@@ -21,5 +21,24 @@ namespace App_PestamosDeportivos
         {
 
         }
+
+        private void Implementos_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void materialMultiLineTextBox21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            txtDescripcion.Clear();
+            txtCantidad.Clear();
+            TxtValor.Clear();   
+        }
     }
 }

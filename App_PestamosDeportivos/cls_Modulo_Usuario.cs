@@ -9,27 +9,30 @@ using System.Windows.Forms;
 
 namespace App_PestamosDeportivos
 {
-    public class cls_Modulo_Usuario
+    public class cls_modulo_usuarios
     {
-        private String str_id;
-        private String str_pnombre;
-        private String str_snombre;
-        private String str_papellido;
-        private String str_sapellido;
-        private String str_contacto;
-        private String str_correo;
-        private String str_direccion;
-        private String str_sexo; 
+
+        private string str_pnombre;
+        private string str_snombre;
+        private string str_papellido;
+        private string str_sapellido;
+        private string str_contacto;
+        private string str_correo;
+        private string str_direccion;
+        private string str_sexo;
         cls_Conexion objConectar = new cls_Conexion();
 
-        public void fnt_guardar(string id,string pnombre,string snombre,string papellido, string sapellidoString,string contacto,String corrreo,string direccion,string sexo)
+        public void fnt_guadar(string id, string pnombre, string snombre, string papellido, string sapellido,
+            string contacto, string correo, string direccion, string sexo, MessageBox messageBox)
         {
-            if(id.Equals("")||pnombre.Equals("")||snombre.Equals("")||papellido.Equals("")||sapellido.equals("")||contacto.Equals("")||str_correo.Equals("")||direccion.Equals(""))
+            if (id.Equals("") || pnombre.Equals("") || snombre.Equals("") || papellido.Equals("") || sapellido.Equals("") ||
+                contacto.Equals("") || correo.Equals("") || direccion.Equals(""))
             {
-                MessageBox.Show("Debe ingresar todos los datos","Registro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Debe ingresar todos los datos", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
+
                 SqlCommand con = new SqlCommand("SP_Registrar_Personas", objConectar.connection);
                 con.CommandType = CommandType.StoredProcedure;
                 con.Parameters.AddWithValue("@id", id);
@@ -46,6 +49,8 @@ namespace App_PestamosDeportivos
                 objConectar.connection.Close();
                 MessageBox.Show("Datos registrados con éxito", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
         }
-    } 
+
+    }
 }

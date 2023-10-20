@@ -260,6 +260,7 @@
             this.Controls.Add(this.txt_Identificacion);
             this.Name = "Frm_Modulo_Usuarios";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Frm_Modulo_Usuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

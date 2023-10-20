@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace App_PestamosDeportivos
 {
-    public partial class Frm_Modulo_Usuarios : Form
+    public partial class frm_prestamos : Form
     {
-        public Frm_Modulo_Usuarios()
+        public frm_prestamos()
         {
             InitializeComponent();
-        }
-
-        private void Frm_Modulo_Usuarios_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
