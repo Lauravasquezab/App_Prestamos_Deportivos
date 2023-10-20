@@ -39,6 +39,8 @@
             this.btnCancelar = new MaterialSkin.Controls.MaterialButton();
             this.txtobservaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.btnagregar = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtIdentificacion
@@ -197,6 +199,7 @@
             this.btnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnCancelar.UseAccentColor = false;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtobservaciones
             // 
@@ -243,11 +246,24 @@
             this.btnagregar.UseAccentColor = false;
             this.btnagregar.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(54, 357);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(706, 162);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // frm_prestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 548);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.txtobservaciones);
             this.Controls.Add(this.btnCancelar);
@@ -261,6 +277,7 @@
             this.Controls.Add(this.txtIdentificacion);
             this.Name = "frm_prestamos";
             this.Text = "frm_prestamos";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,5 +296,6 @@
         private MaterialSkin.Controls.MaterialButton btnCancelar;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtobservaciones;
         private MaterialSkin.Controls.MaterialButton btnagregar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

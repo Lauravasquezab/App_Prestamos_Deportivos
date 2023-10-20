@@ -16,5 +16,18 @@ namespace App_PestamosDeportivos
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtIdentificacion.Clear();
+            txtNombre.Clear();
+            txtImplemento.Clear();
+            txtDescripcion.Clear();
+            txtExistencias.Clear();
+            txtNombreImpedimento.Clear();
+            txtCantidadaPrestar.Clear();
+            txtobservaciones.Clear();
+
+        }
     }
 }

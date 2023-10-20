@@ -16,7 +16,7 @@ namespace App_PestamosDeportivos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ModuloUsuarios());
+            Application.Run(new Frm_Modulo_Usuarios());
         }
     }
 }

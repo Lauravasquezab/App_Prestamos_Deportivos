@@ -5,3 +5,11 @@ C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.Implementos.resources
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.frm_prestamos.resources
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.FrmLogin.resources
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\bin\Debug\App_PestamosDeportivos.exe.config
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\bin\Debug\App_PestamosDeportivos.exe
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\bin\Debug\App_PestamosDeportivos.pdb
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\bin\Debug\MaterialSkin.dll
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.CopyComplete
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.exe
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.pdb
