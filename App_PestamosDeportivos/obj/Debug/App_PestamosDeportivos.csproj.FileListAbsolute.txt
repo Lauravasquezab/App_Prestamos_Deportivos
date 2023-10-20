@@ -3,3 +3,4 @@ C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.Properties.Resources.resources
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.GenerateResource.cache
 C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\GitHub\App_Prestamos_Deportivos\App_PestamosDeportivos\obj\Debug\App_PestamosDeportivos.Implementos.resources
