@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtIdentificacion = new MaterialSkin.Controls.MaterialTextBox();
+            this.txtId = new MaterialSkin.Controls.MaterialTextBox();
             this.txtNombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txtImplemento = new MaterialSkin.Controls.MaterialTextBox();
             this.txtDescripcion = new MaterialSkin.Controls.MaterialTextBox();
@@ -39,26 +39,26 @@
             this.btnCancelar = new MaterialSkin.Controls.MaterialButton();
             this.txtobservaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.btnagregar = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtg_prestamos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_prestamos)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtIdentificacion
+            // txtId
             // 
-            this.txtIdentificacion.AnimateReadOnly = false;
-            this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdentificacion.Depth = 0;
-            this.txtIdentificacion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtIdentificacion.LeadingIcon = null;
-            this.txtIdentificacion.Location = new System.Drawing.Point(42, 38);
-            this.txtIdentificacion.MaxLength = 50;
-            this.txtIdentificacion.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtIdentificacion.Multiline = false;
-            this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(327, 50);
-            this.txtIdentificacion.TabIndex = 0;
-            this.txtIdentificacion.Text = "Identificacion de la persona";
-            this.txtIdentificacion.TrailingIcon = null;
+            this.txtId.AnimateReadOnly = false;
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtId.Depth = 0;
+            this.txtId.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.LeadingIcon = null;
+            this.txtId.Location = new System.Drawing.Point(42, 38);
+            this.txtId.MaxLength = 50;
+            this.txtId.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtId.Multiline = false;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(327, 50);
+            this.txtId.TabIndex = 0;
+            this.txtId.Text = "Identificacion de la persona";
+            this.txtId.TrailingIcon = null;
             // 
             // txtNombre
             // 
@@ -246,24 +246,24 @@
             this.btnagregar.UseAccentColor = false;
             this.btnagregar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtg_prestamos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 357);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(706, 162);
-            this.dataGridView1.TabIndex = 11;
+            this.dtg_prestamos.AllowUserToAddRows = false;
+            this.dtg_prestamos.AllowUserToDeleteRows = false;
+            this.dtg_prestamos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_prestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_prestamos.Location = new System.Drawing.Point(54, 357);
+            this.dtg_prestamos.Name = "dtg_prestamos";
+            this.dtg_prestamos.ReadOnly = true;
+            this.dtg_prestamos.Size = new System.Drawing.Size(706, 162);
+            this.dtg_prestamos.TabIndex = 11;
             // 
             // frm_prestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 548);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtg_prestamos);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.txtobservaciones);
             this.Controls.Add(this.btnCancelar);
@@ -274,10 +274,10 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtImplemento);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtIdentificacion);
+            this.Controls.Add(this.txtId);
             this.Name = "frm_prestamos";
             this.Text = "frm_prestamos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_prestamos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +285,7 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialTextBox txtIdentificacion;
+        private MaterialSkin.Controls.MaterialTextBox txtId;
         private MaterialSkin.Controls.MaterialTextBox txtNombre;
         private MaterialSkin.Controls.MaterialTextBox txtImplemento;
         private MaterialSkin.Controls.MaterialTextBox txtDescripcion;
@@ -296,6 +296,6 @@
         private MaterialSkin.Controls.MaterialButton btnCancelar;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txtobservaciones;
         private MaterialSkin.Controls.MaterialButton btnagregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtg_prestamos;
     }
 }
