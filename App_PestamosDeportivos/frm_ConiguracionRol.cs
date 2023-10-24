@@ -16,5 +16,17 @@ namespace App_PestamosDeportivos
         {
             InitializeComponent();
         }
+
+        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_ConiguracionRol_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dbs_prestamos_deportivosDataSet.tbl_rol' Puede moverla o quitarla según sea necesario.
+            this.tbl_rolTableAdapter.Fill(this.dbs_prestamos_deportivosDataSet.tbl_rol);
+
+        }
     }
 }
