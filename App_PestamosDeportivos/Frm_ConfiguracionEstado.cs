@@ -16,5 +16,17 @@ namespace App_PestamosDeportivos
         {
             InitializeComponent();
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Frm_ConfiguracionEstado_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dbs_prestamos_deportivosDataSet1.tbl_estado' Puede moverla o quitarla según sea necesario.
+            this.tbl_estadoTableAdapter.Fill(this.dbs_prestamos_deportivosDataSet1.tbl_estado);
+
+        }
     }
 }

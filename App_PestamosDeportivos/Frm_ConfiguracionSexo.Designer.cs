@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dbs_prestamos_deportivosDataSet2 = new App_PestamosDeportivos.dbs_prestamos_deportivosDataSet2();
+            this.tblsexoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_sexoTableAdapter = new App_PestamosDeportivos.dbs_prestamos_deportivosDataSet2TableAdapters.tbl_sexoTableAdapter();
+            this.pKIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomenclaturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // materialComboBox1
@@ -81,7 +92,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(42, 192);
+            this.materialButton1.Location = new System.Drawing.Point(374, 90);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -100,7 +111,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(138, 192);
+            this.materialButton2.Location = new System.Drawing.Point(374, 152);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -119,7 +130,7 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(242, 192);
+            this.materialButton3.Location = new System.Drawing.Point(374, 223);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -131,11 +142,58 @@
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pKIdDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.nomenclaturaDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblsexoBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 167);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(288, 150);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // dbs_prestamos_deportivosDataSet2
+            // 
+            this.dbs_prestamos_deportivosDataSet2.DataSetName = "dbs_prestamos_deportivosDataSet2";
+            this.dbs_prestamos_deportivosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblsexoBindingSource
+            // 
+            this.tblsexoBindingSource.DataMember = "tbl_sexo";
+            this.tblsexoBindingSource.DataSource = this.dbs_prestamos_deportivosDataSet2;
+            // 
+            // tbl_sexoTableAdapter
+            // 
+            this.tbl_sexoTableAdapter.ClearBeforeFill = true;
+            // 
+            // pKIdDataGridViewTextBoxColumn
+            // 
+            this.pKIdDataGridViewTextBoxColumn.DataPropertyName = "PKId";
+            this.pKIdDataGridViewTextBoxColumn.HeaderText = "PKId";
+            this.pKIdDataGridViewTextBoxColumn.Name = "pKIdDataGridViewTextBoxColumn";
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // nomenclaturaDataGridViewTextBoxColumn
+            // 
+            this.nomenclaturaDataGridViewTextBoxColumn.DataPropertyName = "Nomenclatura";
+            this.nomenclaturaDataGridViewTextBoxColumn.HeaderText = "Nomenclatura";
+            this.nomenclaturaDataGridViewTextBoxColumn.Name = "nomenclaturaDataGridViewTextBoxColumn";
+            // 
             // Frm_ConfiguracionSexo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 267);
+            this.ClientSize = new System.Drawing.Size(522, 418);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.materialButton3);
             this.Controls.Add(this.materialButton2);
             this.Controls.Add(this.materialButton1);
@@ -143,6 +201,10 @@
             this.Controls.Add(this.materialComboBox1);
             this.Name = "Frm_ConfiguracionSexo";
             this.Text = "Frm_ConfiguracionSexo";
+            this.Load += new System.EventHandler(this.Frm_ConfiguracionSexo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +217,12 @@
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton materialButton3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private dbs_prestamos_deportivosDataSet2 dbs_prestamos_deportivosDataSet2;
+        private System.Windows.Forms.BindingSource tblsexoBindingSource;
+        private dbs_prestamos_deportivosDataSet2TableAdapters.tbl_sexoTableAdapter tbl_sexoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pKIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomenclaturaDataGridViewTextBoxColumn;
     }
 }

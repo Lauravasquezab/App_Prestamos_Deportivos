@@ -52,11 +52,44 @@
   <ItemGroup>
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_Modulo_Usuario.cs" />
+    <Compile Include="dbs_prestamos_deportivosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbs_prestamos_deportivosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbs_prestamos_deportivosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbs_prestamos_deportivosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbs_prestamos_deportivosDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbs_prestamos_deportivosDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfiguracionEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfiguracionEstado.Designer.cs">
+      <DependentUpon>Frm_ConfiguracionEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfiguracionSexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfiguracionSexo.Designer.cs">
+      <DependentUpon>Frm_ConfiguracionSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConiguracionRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConiguracionRol.Designer.cs">
+      <DependentUpon>frm_ConiguracionRol.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Implementos.cs">
       <SubType>Form</SubType>
@@ -81,6 +114,15 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfiguracionEstado.resx">
+      <DependentUpon>Frm_ConfiguracionEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfiguracionSexo.resx">
+      <DependentUpon>Frm_ConfiguracionSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConiguracionRol.resx">
+      <DependentUpon>frm_ConiguracionRol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Implementos.resx">
       <DependentUpon>frm_Implementos.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +141,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="dbs_prestamos_deportivosDataSet.xsc">
+      <DependentUpon>dbs_prestamos_deportivosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbs_prestamos_deportivosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet.xss">
+      <DependentUpon>dbs_prestamos_deportivosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet1.xsc">
+      <DependentUpon>dbs_prestamos_deportivosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbs_prestamos_deportivosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet1.xss">
+      <DependentUpon>dbs_prestamos_deportivosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet2.xsc">
+      <DependentUpon>dbs_prestamos_deportivosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbs_prestamos_deportivosDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbs_prestamos_deportivosDataSet2.xss">
+      <DependentUpon>dbs_prestamos_deportivosDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
