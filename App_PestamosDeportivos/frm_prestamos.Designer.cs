@@ -48,7 +48,7 @@
             this.txtId.AnimateReadOnly = false;
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Depth = 0;
-            this.txtId.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtId.LeadingIcon = null;
             this.txtId.Location = new System.Drawing.Point(42, 38);
             this.txtId.MaxLength = 50;
@@ -59,13 +59,14 @@
             this.txtId.TabIndex = 0;
             this.txtId.Text = "Identificacion de la persona";
             this.txtId.TrailingIcon = null;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // txtNombre
             // 
             this.txtNombre.AnimateReadOnly = false;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Depth = 0;
-            this.txtNombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtNombre.LeadingIcon = null;
             this.txtNombre.Location = new System.Drawing.Point(376, 38);
             this.txtNombre.MaxLength = 50;
@@ -82,7 +83,7 @@
             this.txtImplemento.AnimateReadOnly = false;
             this.txtImplemento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtImplemento.Depth = 0;
-            this.txtImplemento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtImplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtImplemento.LeadingIcon = null;
             this.txtImplemento.Location = new System.Drawing.Point(42, 106);
             this.txtImplemento.MaxLength = 50;
@@ -99,7 +100,7 @@
             this.txtDescripcion.AnimateReadOnly = false;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcion.Depth = 0;
-            this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDescripcion.LeadingIcon = null;
             this.txtDescripcion.Location = new System.Drawing.Point(376, 106);
             this.txtDescripcion.MaxLength = 50;
@@ -116,7 +117,7 @@
             this.txtExistencias.AnimateReadOnly = false;
             this.txtExistencias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtExistencias.Depth = 0;
-            this.txtExistencias.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtExistencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExistencias.LeadingIcon = null;
             this.txtExistencias.Location = new System.Drawing.Point(42, 163);
             this.txtExistencias.MaxLength = 50;
@@ -133,7 +134,7 @@
             this.txtNombreImpedimento.AnimateReadOnly = false;
             this.txtNombreImpedimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombreImpedimento.Depth = 0;
-            this.txtNombreImpedimento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNombreImpedimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtNombreImpedimento.LeadingIcon = null;
             this.txtNombreImpedimento.Location = new System.Drawing.Point(376, 163);
             this.txtNombreImpedimento.MaxLength = 50;
@@ -150,7 +151,7 @@
             this.txtCantidadaPrestar.AnimateReadOnly = false;
             this.txtCantidadaPrestar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCantidadaPrestar.Depth = 0;
-            this.txtCantidadaPrestar.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCantidadaPrestar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtCantidadaPrestar.LeadingIcon = null;
             this.txtCantidadaPrestar.Location = new System.Drawing.Point(42, 220);
             this.txtCantidadaPrestar.MaxLength = 50;

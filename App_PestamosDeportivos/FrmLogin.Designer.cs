@@ -39,7 +39,7 @@
             this.frmUsuario.AnimateReadOnly = false;
             this.frmUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.frmUsuario.Depth = 0;
-            this.frmUsuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.frmUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.frmUsuario.LeadingIcon = null;
             this.frmUsuario.Location = new System.Drawing.Point(132, 72);
             this.frmUsuario.MaxLength = 50;
@@ -56,7 +56,7 @@
             this.frmContraseña.AnimateReadOnly = false;
             this.frmContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.frmContraseña.Depth = 0;
-            this.frmContraseña.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.frmContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.frmContraseña.LeadingIcon = null;
             this.frmContraseña.Location = new System.Drawing.Point(132, 139);
             this.frmContraseña.MaxLength = 50;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(733, 253);
             this.Controls.Add(this.frmCancelar);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.frmContraseña);

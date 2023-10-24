@@ -19,7 +19,7 @@ namespace App_PestamosDeportivos
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtId.Clear();
+            
             txtNombre.Clear();
             txtImplemento.Clear();
             txtDescripcion.Clear();
@@ -28,7 +28,12 @@ namespace App_PestamosDeportivos
             txtCantidadaPrestar.Clear();
             txtobservaciones.Clear();
             dtg_prestamos.DataSource = null;
-            txtId.focus();
+            txtId.Focus();
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
