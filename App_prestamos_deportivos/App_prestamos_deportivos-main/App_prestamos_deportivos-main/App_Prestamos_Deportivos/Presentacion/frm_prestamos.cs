@@ -36,7 +36,7 @@ namespace Presentacion
         {
             if(e.KeyCode == Keys.Enter) {
 
-                cls_conexion objConsultarP = new cls_prestamos();
+                cls_prestamos  objConsultarP = new cls_prestamos();
                 objConsultarP.fnt_consultar(txt_id.Text);
                 txt_nombre.Text = objConsultarP.getNombre();
 
