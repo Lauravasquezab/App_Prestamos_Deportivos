@@ -32,6 +32,8 @@
             this.txt_contraseña = new MaterialSkin.Controls.MaterialTextBox();
             this.btn_cancelar = new MaterialSkin.Controls.MaterialButton();
             this.btn_ingresar = new MaterialSkin.Controls.MaterialButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_usuario
@@ -110,12 +112,21 @@
             this.btn_ingresar.UseAccentColor = false;
             this.btn_ingresar.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(558, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 107);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(490, 175);
+            this.ClientSize = new System.Drawing.Size(889, 177);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.txt_contraseña);
@@ -124,6 +135,7 @@
             this.Name = "frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +147,6 @@
         private MaterialSkin.Controls.MaterialTextBox txt_contraseña;
         private MaterialSkin.Controls.MaterialButton btn_cancelar;
         private MaterialSkin.Controls.MaterialButton btn_ingresar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
