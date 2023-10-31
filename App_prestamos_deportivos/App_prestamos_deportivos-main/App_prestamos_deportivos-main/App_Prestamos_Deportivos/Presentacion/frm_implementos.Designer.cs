@@ -55,6 +55,7 @@
             this.txt_codigo.TabIndex = 0;
             this.txt_codigo.Text = "";
             this.txt_codigo.TrailingIcon = null;
+            this.txt_codigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_codigo_KeyUp_1);
             // 
             // txt_nombre
             // 
@@ -168,6 +169,7 @@
             this.btn_actualizar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_actualizar.UseAccentColor = false;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // txt_descripcion
             // 
@@ -213,6 +215,7 @@
             this.Name = "frm_implementos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FORMULARIO IMPLEMENTOS";
+            this.Load += new System.EventHandler(this.frm_implementos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
