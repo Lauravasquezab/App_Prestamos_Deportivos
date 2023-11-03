@@ -42,5 +42,50 @@ namespace Presentacion
 
             }
         }
+
+        private void txt_codigo_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                cls_prestamos objConsultar = new cls_prestamos();
+                objConsultar.fnt_consultar_implemento(txt_codigo.Text);
+                txt_existencias.Text = "" + objConsultar.getCantidad();
+                txt_nombre_implemento.Text = "" + objConsultar.getNombreImplemento();
+                txt_descripcion.Text = objConsultar.getEspecificaciones();
+
+            }
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            
+            if(Convert.ToInt16(txt_cantidad_prestamo.Text) <= Convert.ToInt16(txt_existencias.Text))
+            {
+                dtg_prestamo.Rows.Add(
+                    txt_codigo.Text, txt_cantidad_prestamo.Text);
+                  
+            }
+        else
+            {
+                MessageBox.Show("No puedes superar la cantidad de existencias", "Agregar",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_prestamo_Click(object sender, EventArgs e)
+        {
+            cls_prestamos obj_prestar = new cls_prestamos;
+            obj_prestar.fnt_prestamo(txt_id.Text, "############");
+            for (int i = 0; i < dtg_prestamo.Rows.Count; i++)
+            {
+                cls_prestamos obj_prestar = new cls_prestamos;
+                obj_prestar.fnt_prestamo(txt_id.Text, "############");
+                for (int i = 0; i < dtg_prestamo.Rows.Count; i++)
+                {
+                    obj_prestar.fnt_det_prestamo(Convert.ToString(dtg_prestamo.Rows[i].Cells[0].Value),
+                        Convert.ToInt16(dtg_prestamo.Rows[i].Cells[1].Value));
+                }
+            }
+    }
     }
 }
