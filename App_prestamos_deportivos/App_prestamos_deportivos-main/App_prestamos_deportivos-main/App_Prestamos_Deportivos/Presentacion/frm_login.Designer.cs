@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.txt_usuario = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_contraseña = new MaterialSkin.Controls.MaterialTextBox();
             this.btn_cancelar = new MaterialSkin.Controls.MaterialButton();
@@ -44,7 +45,7 @@
             this.txt_usuario.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_usuario.Hint = "Usuario";
             this.txt_usuario.LeadingIcon = null;
-            this.txt_usuario.Location = new System.Drawing.Point(41, 14);
+            this.txt_usuario.Location = new System.Drawing.Point(248, 14);
             this.txt_usuario.MaxLength = 50;
             this.txt_usuario.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_usuario.Multiline = false;
@@ -62,7 +63,7 @@
             this.txt_contraseña.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_contraseña.Hint = "Contraseña";
             this.txt_contraseña.LeadingIcon = null;
-            this.txt_contraseña.Location = new System.Drawing.Point(41, 70);
+            this.txt_contraseña.Location = new System.Drawing.Point(248, 65);
             this.txt_contraseña.MaxLength = 50;
             this.txt_contraseña.MouseState = MaterialSkin.MouseState.OUT;
             this.txt_contraseña.Multiline = false;
@@ -80,7 +81,7 @@
             this.btn_cancelar.Depth = 0;
             this.btn_cancelar.HighEmphasis = true;
             this.btn_cancelar.Icon = null;
-            this.btn_cancelar.Location = new System.Drawing.Point(347, 124);
+            this.btn_cancelar.Location = new System.Drawing.Point(472, 124);
             this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn_cancelar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn_cancelar.Name = "btn_cancelar";
@@ -100,7 +101,7 @@
             this.btn_ingresar.Depth = 0;
             this.btn_ingresar.HighEmphasis = true;
             this.btn_ingresar.Icon = null;
-            this.btn_ingresar.Location = new System.Drawing.Point(248, 124);
+            this.btn_ingresar.Location = new System.Drawing.Point(373, 124);
             this.btn_ingresar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn_ingresar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn_ingresar.Name = "btn_ingresar";
@@ -111,12 +112,15 @@
             this.btn_ingresar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_ingresar.UseAccentColor = false;
             this.btn_ingresar.UseVisualStyleBackColor = true;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(558, 36);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(215, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -125,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(889, 177);
+            this.ClientSize = new System.Drawing.Size(699, 177);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.btn_cancelar);

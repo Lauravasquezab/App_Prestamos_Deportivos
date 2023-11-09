@@ -23,5 +23,10 @@ namespace Presentacion
             txt_usuario.Clear();
             txt_usuario.Focus();
         }
+
+        private void btn_ingresar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Negocio
         public void fnt_consultar(string codigo)
         {
             SqlCommand con; SqlDataReader Lectura;
-            con = new SqlCommand("SP_Consultarpersona", objconect.connection);
+            con = new SqlCommand("SP_consultarpersonas", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@codigo", codigo);
             objconect.connection.Open();
@@ -38,7 +38,7 @@ namespace Negocio
         public void fnt_consultar_implemento(string codigo)
         {
             SqlCommand con; SqlDataReader Lectura;
-            con = new SqlCommand("SP_ConsultarImplemento", objconect.connection);
+            con = new SqlCommand("SP_ConsultarImplementos", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@codigo", codigo);
             objconect.connection.Open();
@@ -56,7 +56,7 @@ namespace Negocio
 
         public void fnt_prestamo(string id,string user)
         {
-            SqlCommand con = new SqlCommand("SP_GenerarPrestamo", objconect.connection);
+            SqlCommand con = new SqlCommand("SP_GenerarPrestamos", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@id_persona", id);
             con.Parameters.AddWithValue("@user", user);
@@ -68,7 +68,7 @@ namespace Negocio
 
         public void fnt_det_prestamo(string cod_implemento, int cantidad)
         {
-            SqlCommand con = new SqlCommand("SP_Generardetprestamo", objconect.connection);
+            SqlCommand con = new SqlCommand("SP_Generardetprestamos", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@cod_implemento", cod_implemento);
             con.Parameters.AddWithValue("@cantidad", cantidad);

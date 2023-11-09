@@ -34,9 +34,10 @@ namespace Presentacion
 
         private void txt_id_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter) {
+            if (e.KeyCode == Keys.Enter)
+            {
 
-                cls_prestamos  objConsultarP = new cls_prestamos();
+                cls_prestamos objConsultarP = new cls_prestamos();
                 objConsultarP.fnt_consultar(txt_id.Text);
                 txt_nombre.Text = objConsultarP.getNombre();
 
@@ -45,7 +46,7 @@ namespace Presentacion
 
         private void txt_codigo_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 cls_prestamos objConsultar = new cls_prestamos();
                 objConsultar.fnt_consultar_implemento(txt_codigo.Text);
@@ -58,14 +59,14 @@ namespace Presentacion
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            
-            if(Convert.ToInt16(txt_cantidad_prestamo.Text) <= Convert.ToInt16(txt_existencias.Text))
+
+            if (Convert.ToInt16(txt_cantidad_prestamo.Text) <= Convert.ToInt16(txt_existencias.Text))
             {
                 dtg_prestamo.Rows.Add(
                     txt_codigo.Text, txt_cantidad_prestamo.Text);
-                  
+
             }
-        else
+            else
             {
                 MessageBox.Show("No puedes superar la cantidad de existencias", "Agregar",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -74,18 +75,17 @@ namespace Presentacion
 
         private void btn_prestamo_Click(object sender, EventArgs e)
         {
-            cls_prestamos obj_prestar = new cls_prestamos;
-            obj_prestar.fnt_prestamo(txt_id.Text, "############");
-            for (int i = 0; i < dtg_prestamo.Rows.Count; i++)
+           
             {
-                cls_prestamos obj_prestar = new cls_prestamos;
-                obj_prestar.fnt_prestamo(txt_id.Text, "############");
-                for (int i = 0; i < dtg_prestamo.Rows.Count; i++)
+                cls_prestamos obj_prestar = new cls_prestamos();
+                obj_prestar.fnt_prestamo(txt_id.Text, "123.DULFRANMONTAÑO");
+                for (int i = 0; i < dtg_prestamo.RowCount; i++)
                 {
                     obj_prestar.fnt_det_prestamo(Convert.ToString(dtg_prestamo.Rows[i].Cells[0].Value),
                         Convert.ToInt16(dtg_prestamo.Rows[i].Cells[1].Value));
                 }
             }
-    }
+
+        }
     }
 }

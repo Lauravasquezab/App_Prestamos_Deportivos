@@ -35,9 +35,9 @@ namespace Negocio
                 con.Parameters.AddWithValue("@p_apellido", p_apellido);
                 con.Parameters.AddWithValue("@s_apellido", s_apellido);
                 con.Parameters.AddWithValue("@contacto", contacto);
-                con.Parameters.AddWithValue("@correo", correo);
                 con.Parameters.AddWithValue("@direccion", direccion);
                 con.Parameters.AddWithValue("@sexo", sexo);
+                con.Parameters.AddWithValue("@correo", correo);
                 objConectar.connection.Open();
                 con.ExecuteNonQuery();
                 objConectar.connection.Close();

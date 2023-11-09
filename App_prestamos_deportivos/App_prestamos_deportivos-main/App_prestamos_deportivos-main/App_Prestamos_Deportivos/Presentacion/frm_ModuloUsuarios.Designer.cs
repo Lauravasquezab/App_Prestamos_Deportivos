@@ -30,7 +30,7 @@
         {
             this.txt_id = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_pnombre = new MaterialSkin.Controls.MaterialTextBox();
-            this.txt_smombre = new MaterialSkin.Controls.MaterialTextBox();
+            this.txt_snombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_papellido = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_sapellido = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_contacto = new MaterialSkin.Controls.MaterialTextBox();
@@ -78,23 +78,23 @@
             this.txt_pnombre.Text = "";
             this.txt_pnombre.TrailingIcon = null;
             // 
-            // txt_smombre
+            // txt_snombre
             // 
-            this.txt_smombre.AnimateReadOnly = false;
-            this.txt_smombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_smombre.Depth = 0;
-            this.txt_smombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_smombre.Hint = "Segundo Nombre";
-            this.txt_smombre.LeadingIcon = null;
-            this.txt_smombre.Location = new System.Drawing.Point(610, 29);
-            this.txt_smombre.MaxLength = 50;
-            this.txt_smombre.MouseState = MaterialSkin.MouseState.OUT;
-            this.txt_smombre.Multiline = false;
-            this.txt_smombre.Name = "txt_smombre";
-            this.txt_smombre.Size = new System.Drawing.Size(293, 50);
-            this.txt_smombre.TabIndex = 2;
-            this.txt_smombre.Text = "";
-            this.txt_smombre.TrailingIcon = null;
+            this.txt_snombre.AnimateReadOnly = false;
+            this.txt_snombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_snombre.Depth = 0;
+            this.txt_snombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_snombre.Hint = "Segundo Nombre";
+            this.txt_snombre.LeadingIcon = null;
+            this.txt_snombre.Location = new System.Drawing.Point(610, 29);
+            this.txt_snombre.MaxLength = 50;
+            this.txt_snombre.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_snombre.Multiline = false;
+            this.txt_snombre.Name = "txt_snombre";
+            this.txt_snombre.Size = new System.Drawing.Size(293, 50);
+            this.txt_snombre.TabIndex = 2;
+            this.txt_snombre.Text = "";
+            this.txt_snombre.TrailingIcon = null;
             // 
             // txt_papellido
             // 
@@ -195,7 +195,7 @@
             this.cbx_sexo.DropDownHeight = 174;
             this.cbx_sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbx_sexo.DropDownWidth = 121;
-            this.cbx_sexo.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbx_sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cbx_sexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbx_sexo.FormattingEnabled = true;
             this.cbx_sexo.IntegralHeight = false;
@@ -249,6 +249,7 @@
             this.btn_guardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_guardar.UseAccentColor = false;
             this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // btn_actualizar
             // 
@@ -283,7 +284,7 @@
             this.Controls.Add(this.txt_contacto);
             this.Controls.Add(this.txt_sapellido);
             this.Controls.Add(this.txt_papellido);
-            this.Controls.Add(this.txt_smombre);
+            this.Controls.Add(this.txt_snombre);
             this.Controls.Add(this.txt_pnombre);
             this.Controls.Add(this.txt_id);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -298,7 +299,7 @@
 
         private MaterialSkin.Controls.MaterialTextBox txt_id;
         private MaterialSkin.Controls.MaterialTextBox txt_pnombre;
-        private MaterialSkin.Controls.MaterialTextBox txt_smombre;
+        private MaterialSkin.Controls.MaterialTextBox txt_snombre;
         private MaterialSkin.Controls.MaterialTextBox txt_papellido;
         private MaterialSkin.Controls.MaterialTextBox txt_sapellido;
         private MaterialSkin.Controls.MaterialTextBox txt_contacto;

@@ -18,7 +18,7 @@ namespace Negocio
 
         public void fnt_registrar(string codigo, string nombre, string descripcion, double precio, int cantidad)
         {
-            SqlCommand con = new SqlCommand("SP_Agregar_Implementos", objconect.connection);
+            SqlCommand con = new SqlCommand("SP_AgregarImplemento", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@codigo", codigo);
             con.Parameters.AddWithValue("@nombre", nombre);
@@ -33,7 +33,7 @@ namespace Negocio
         public void fnt_consultar(string codigo)
         {
             SqlCommand con; SqlDataReader Lectura;
-            con = new SqlCommand("SP_ConsultarImplemento", objconect.connection);
+            con = new SqlCommand("SP_ConsultarImplementos", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@codigo", codigo);
             objconect.connection.Open();
@@ -50,7 +50,7 @@ namespace Negocio
 
         public void fnt_actualizar(string codigo, string nombre, string descripcion, double precio, int cantidad)
         {
-            SqlCommand con = new SqlCommand("SP_Actualizar_implemento", objconect.connection);
+            SqlCommand con = new SqlCommand("SP_Actualizar_implementos", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
             con.Parameters.AddWithValue("@codigo", codigo);
             con.Parameters.AddWithValue("@nombre", nombre);
