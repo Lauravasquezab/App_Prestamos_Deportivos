@@ -78,13 +78,22 @@ namespace Presentacion
            
             {
                 cls_prestamos obj_prestar = new cls_prestamos();
-                obj_prestar.fnt_prestamo(txt_id.Text, "123.DULFRANMONTAÑO");
+                obj_prestar.fnt_prestamo(txt_id.Text, "001");
                 for (int i = 0; i < dtg_prestamo.RowCount; i++)
                 {
                     obj_prestar.fnt_det_prestamo(Convert.ToString(dtg_prestamo.Rows[i].Cells[0].Value),
                         Convert.ToInt16(dtg_prestamo.Rows[i].Cells[1].Value));
                 }
             }
+
+        }
+
+        private void frm_prestamos_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'dbs_prestamos_deportivosDataSet3.tbl_det_prestamos' Puede moverla o quitarla según sea necesario.
+            this.tbl_det_prestamosTableAdapter.Fill(this.dbs_prestamos_deportivosDataSet3.tbl_det_prestamos);
+            // TODO: esta línea de código carga datos en la tabla 'dbs_prestamos_deportivosDataSet2.tbl_implementos' Puede moverla o quitarla según sea necesario.
+            this.tbl_implementosTableAdapter.Fill(this.dbs_prestamos_deportivosDataSet2.tbl_implementos);
 
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ModuloUsuarios));
             this.txt_id = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_pnombre = new MaterialSkin.Controls.MaterialTextBox();
@@ -37,12 +38,24 @@
             this.txt_contacto = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_correo = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_direccion = new MaterialSkin.Controls.MaterialTextBox();
-            this.cbx_sexo = new MaterialSkin.Controls.MaterialComboBox();
             this.btn_cancelar = new MaterialSkin.Controls.MaterialButton();
             this.btn_guardar = new MaterialSkin.Controls.MaterialButton();
             this.btn_actualizar = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dbs_prestamos_deportivosDataSet = new Presentacion.dbs_prestamos_deportivosDataSet();
+            this.tblsexoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_sexoTableAdapter = new Presentacion.dbs_prestamos_deportivosDataSetTableAdapters.tbl_sexoTableAdapter();
+            this.cbx_sexo = new MaterialSkin.Controls.MaterialComboBox();
+            this.dbs_prestamos_deportivosDataSet1 = new Presentacion.dbs_prestamos_deportivosDataSet1();
+            this.tblsexoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_sexoTableAdapter1 = new Presentacion.dbs_prestamos_deportivosDataSet1TableAdapters.tbl_sexoTableAdapter();
+            this.dbsprestamosdeportivosDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsprestamosdeportivosDataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_id
@@ -50,7 +63,7 @@
             this.txt_id.AnimateReadOnly = false;
             this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_id.Depth = 0;
-            this.txt_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_id.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_id.Hint = "Identificación";
             this.txt_id.LeadingIcon = null;
             this.txt_id.Location = new System.Drawing.Point(14, 29);
@@ -69,7 +82,7 @@
             this.txt_pnombre.AnimateReadOnly = false;
             this.txt_pnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_pnombre.Depth = 0;
-            this.txt_pnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_pnombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_pnombre.Hint = "Primer Nombre";
             this.txt_pnombre.LeadingIcon = null;
             this.txt_pnombre.Location = new System.Drawing.Point(253, 29);
@@ -88,7 +101,7 @@
             this.txt_snombre.AnimateReadOnly = false;
             this.txt_snombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_snombre.Depth = 0;
-            this.txt_snombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_snombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_snombre.Hint = "Segundo Nombre";
             this.txt_snombre.LeadingIcon = null;
             this.txt_snombre.Location = new System.Drawing.Point(529, 29);
@@ -107,7 +120,7 @@
             this.txt_papellido.AnimateReadOnly = false;
             this.txt_papellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_papellido.Depth = 0;
-            this.txt_papellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_papellido.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_papellido.Hint = "Primer Apellido";
             this.txt_papellido.LeadingIcon = null;
             this.txt_papellido.Location = new System.Drawing.Point(14, 85);
@@ -126,7 +139,7 @@
             this.txt_sapellido.AnimateReadOnly = false;
             this.txt_sapellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_sapellido.Depth = 0;
-            this.txt_sapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_sapellido.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_sapellido.Hint = "Segundo Apellido";
             this.txt_sapellido.LeadingIcon = null;
             this.txt_sapellido.Location = new System.Drawing.Point(253, 85);
@@ -145,7 +158,7 @@
             this.txt_contacto.AnimateReadOnly = false;
             this.txt_contacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_contacto.Depth = 0;
-            this.txt_contacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_contacto.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_contacto.Hint = "Contacto";
             this.txt_contacto.LeadingIcon = null;
             this.txt_contacto.Location = new System.Drawing.Point(529, 85);
@@ -164,7 +177,7 @@
             this.txt_correo.AnimateReadOnly = false;
             this.txt_correo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_correo.Depth = 0;
-            this.txt_correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_correo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_correo.Hint = "Correo";
             this.txt_correo.LeadingIcon = null;
             this.txt_correo.Location = new System.Drawing.Point(11, 141);
@@ -183,7 +196,7 @@
             this.txt_direccion.AnimateReadOnly = false;
             this.txt_direccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_direccion.Depth = 0;
-            this.txt_direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_direccion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_direccion.Hint = "Dirección";
             this.txt_direccion.LeadingIcon = null;
             this.txt_direccion.Location = new System.Drawing.Point(11, 197);
@@ -196,33 +209,6 @@
             this.txt_direccion.Text = "";
             this.txt_direccion.TrailingIcon = null;
             this.txt_direccion.TextChanged += new System.EventHandler(this.txt_direccion_TextChanged);
-            // 
-            // cbx_sexo
-            // 
-            this.cbx_sexo.AutoResize = false;
-            this.cbx_sexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbx_sexo.Depth = 0;
-            this.cbx_sexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbx_sexo.DropDownHeight = 174;
-            this.cbx_sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_sexo.DropDownWidth = 121;
-            this.cbx_sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbx_sexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbx_sexo.FormattingEnabled = true;
-            this.cbx_sexo.IntegralHeight = false;
-            this.cbx_sexo.ItemHeight = 43;
-            this.cbx_sexo.Items.AddRange(new object[] {
-            "Masculino",
-            "Femenino",
-            "Prefiero no decirlo"});
-            this.cbx_sexo.Location = new System.Drawing.Point(529, 141);
-            this.cbx_sexo.MaxDropDownItems = 4;
-            this.cbx_sexo.MouseState = MaterialSkin.MouseState.OUT;
-            this.cbx_sexo.Name = "cbx_sexo";
-            this.cbx_sexo.Size = new System.Drawing.Size(229, 49);
-            this.cbx_sexo.StartIndex = 0;
-            this.cbx_sexo.TabIndex = 8;
-            this.cbx_sexo.SelectedIndexChanged += new System.EventHandler(this.cbx_sexo_SelectedIndexChanged);
             // 
             // btn_cancelar
             // 
@@ -281,6 +267,7 @@
             this.btn_actualizar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_actualizar.UseAccentColor = false;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // pictureBox1
             // 
@@ -292,16 +279,76 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // dbs_prestamos_deportivosDataSet
+            // 
+            this.dbs_prestamos_deportivosDataSet.DataSetName = "dbs_prestamos_deportivosDataSet";
+            this.dbs_prestamos_deportivosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblsexoBindingSource
+            // 
+            this.tblsexoBindingSource.DataMember = "tbl_sexo";
+            this.tblsexoBindingSource.DataSource = this.dbs_prestamos_deportivosDataSet;
+            // 
+            // tbl_sexoTableAdapter
+            // 
+            this.tbl_sexoTableAdapter.ClearBeforeFill = true;
+            // 
+            // cbx_sexo
+            // 
+            this.cbx_sexo.AutoResize = false;
+            this.cbx_sexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbx_sexo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tblsexoBindingSource1, "PKId", true));
+            this.cbx_sexo.DataSource = this.tblsexoBindingSource1;
+            this.cbx_sexo.Depth = 0;
+            this.cbx_sexo.DisplayMember = "Nombre";
+            this.cbx_sexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbx_sexo.DropDownHeight = 174;
+            this.cbx_sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_sexo.DropDownWidth = 121;
+            this.cbx_sexo.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbx_sexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbx_sexo.FormattingEnabled = true;
+            this.cbx_sexo.Hint = "Sexo";
+            this.cbx_sexo.IntegralHeight = false;
+            this.cbx_sexo.ItemHeight = 43;
+            this.cbx_sexo.Location = new System.Drawing.Point(527, 140);
+            this.cbx_sexo.MaxDropDownItems = 4;
+            this.cbx_sexo.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbx_sexo.Name = "cbx_sexo";
+            this.cbx_sexo.Size = new System.Drawing.Size(231, 49);
+            this.cbx_sexo.StartIndex = 0;
+            this.cbx_sexo.TabIndex = 13;
+            this.cbx_sexo.ValueMember = "PKId";
+            // 
+            // dbs_prestamos_deportivosDataSet1
+            // 
+            this.dbs_prestamos_deportivosDataSet1.DataSetName = "dbs_prestamos_deportivosDataSet1";
+            this.dbs_prestamos_deportivosDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblsexoBindingSource1
+            // 
+            this.tblsexoBindingSource1.DataMember = "tbl_sexo";
+            this.tblsexoBindingSource1.DataSource = this.dbs_prestamos_deportivosDataSet1;
+            // 
+            // tbl_sexoTableAdapter1
+            // 
+            this.tbl_sexoTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dbsprestamosdeportivosDataSet1BindingSource
+            // 
+            this.dbsprestamosdeportivosDataSet1BindingSource.DataSource = this.dbs_prestamos_deportivosDataSet1;
+            this.dbsprestamosdeportivosDataSet1BindingSource.Position = 0;
+            // 
             // frm_ModuloUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 302);
+            this.Controls.Add(this.cbx_sexo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.cbx_sexo);
             this.Controls.Add(this.txt_direccion);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_contacto);
@@ -315,6 +362,11 @@
             this.Text = "MÓDULO - REGISTRO USUARIOS";
             this.Load += new System.EventHandler(this.frm_ModuloUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblsexoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbsprestamosdeportivosDataSet1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,11 +382,18 @@
         private MaterialSkin.Controls.MaterialTextBox txt_contacto;
         private MaterialSkin.Controls.MaterialTextBox txt_correo;
         private MaterialSkin.Controls.MaterialTextBox txt_direccion;
-        private MaterialSkin.Controls.MaterialComboBox cbx_sexo;
         private MaterialSkin.Controls.MaterialButton btn_cancelar;
         private MaterialSkin.Controls.MaterialButton btn_guardar;
         private MaterialSkin.Controls.MaterialButton btn_actualizar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private dbs_prestamos_deportivosDataSet dbs_prestamos_deportivosDataSet;
+        private System.Windows.Forms.BindingSource tblsexoBindingSource;
+        private dbs_prestamos_deportivosDataSetTableAdapters.tbl_sexoTableAdapter tbl_sexoTableAdapter;
+        private MaterialSkin.Controls.MaterialComboBox cbx_sexo;
+        private dbs_prestamos_deportivosDataSet1 dbs_prestamos_deportivosDataSet1;
+        private System.Windows.Forms.BindingSource tblsexoBindingSource1;
+        private dbs_prestamos_deportivosDataSet1TableAdapters.tbl_sexoTableAdapter tbl_sexoTableAdapter1;
+        private System.Windows.Forms.BindingSource dbsprestamosdeportivosDataSet1BindingSource;
     }
 }
 

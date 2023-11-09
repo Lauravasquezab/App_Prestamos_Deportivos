@@ -24,7 +24,7 @@ namespace Negocio
             SqlCommand con; SqlDataReader Lectura;
             con = new SqlCommand("SP_consultarpersonas", objconect.connection);
             con.CommandType = CommandType.StoredProcedure;
-            con.Parameters.AddWithValue("@codigo", codigo);
+            con.Parameters.AddWithValue("@id", codigo);
             objconect.connection.Open();
             Lectura = con.ExecuteReader();
             if (Lectura.Read() == true)
@@ -63,7 +63,7 @@ namespace Negocio
             objconect.connection.Open();
             con.ExecuteNonQuery();
             objconect.connection.Close();
-            MessageBox.Show("Persona registrada con éxito", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Prestamo registrado con éxito", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void fnt_det_prestamo(string cod_implemento, int cantidad)

@@ -24,10 +24,12 @@ namespace Negocio
                 contacto.Equals("") || correo.Equals("") || direccion.Equals(""))
             {
                 MessageBox.Show("Debe ingresar todos los datos","Registro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(id + p_nombre + s_nombre + p_apellido + s_apellido + contacto + correo + direccion + sexo, "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 SqlCommand con = new SqlCommand("SP_RegistrarPersonas", objConectar.connection);
+                //MessageBox.Show(id, "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 con.CommandType = CommandType.StoredProcedure;
                 con.Parameters.AddWithValue("@id", id);
                 con.Parameters.AddWithValue("@p_nombre", p_nombre);

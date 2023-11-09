@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txt_id = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_codigo = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_cantidad_prestamo = new MaterialSkin.Controls.MaterialTextBox();
@@ -36,13 +37,24 @@
             this.txt_observaciones = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.btn_agregar = new MaterialSkin.Controls.MaterialButton();
             this.dtg_prestamo = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_nombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_descripcion = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_nombre_implemento = new MaterialSkin.Controls.MaterialTextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_existencias = new MaterialSkin.Controls.MaterialTextBox();
+            this.dbs_prestamos_deportivosDataSet2 = new Presentacion.dbs_prestamos_deportivosDataSet2();
+            this.tblimplementosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_implementosTableAdapter = new Presentacion.dbs_prestamos_deportivosDataSet2TableAdapters.tbl_implementosTableAdapter();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dbs_prestamos_deportivosDataSet3 = new Presentacion.dbs_prestamos_deportivosDataSet3();
+            this.tbldetprestamosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_det_prestamosTableAdapter = new Presentacion.dbs_prestamos_deportivosDataSet3TableAdapters.tbl_det_prestamosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_prestamo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblimplementosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbldetprestamosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_id
@@ -191,25 +203,40 @@
             // 
             this.dtg_prestamo.AllowUserToAddRows = false;
             this.dtg_prestamo.AllowUserToDeleteRows = false;
+            this.dtg_prestamo.AutoGenerateColumns = false;
             this.dtg_prestamo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtg_prestamo.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtg_prestamo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtg_prestamo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_prestamo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2});
+            this.Column2,
+            this.cantidadDataGridViewTextBoxColumn});
+            this.dtg_prestamo.DataSource = this.tbldetprestamosBindingSource;
             this.dtg_prestamo.Location = new System.Drawing.Point(12, 284);
             this.dtg_prestamo.Name = "dtg_prestamo";
             this.dtg_prestamo.ReadOnly = true;
             this.dtg_prestamo.Size = new System.Drawing.Size(892, 195);
             this.dtg_prestamo.TabIndex = 11;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Código Implemento";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Cantidad prestada";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
             // txt_nombre
             // 
             this.txt_nombre.AnimateReadOnly = false;
             this.txt_nombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_nombre.Depth = 0;
-            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_nombre.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_nombre.Hint = "Nombres persona";
             this.txt_nombre.LeadingIcon = null;
             this.txt_nombre.Location = new System.Drawing.Point(292, 12);
@@ -227,7 +254,7 @@
             this.txt_descripcion.AnimateReadOnly = false;
             this.txt_descripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_descripcion.Depth = 0;
-            this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_descripcion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_descripcion.Hint = "Descripción";
             this.txt_descripcion.LeadingIcon = null;
             this.txt_descripcion.Location = new System.Drawing.Point(292, 67);
@@ -245,7 +272,7 @@
             this.txt_nombre_implemento.AnimateReadOnly = false;
             this.txt_nombre_implemento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_nombre_implemento.Depth = 0;
-            this.txt_nombre_implemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_nombre_implemento.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_nombre_implemento.Hint = "Nombre del implemento";
             this.txt_nombre_implemento.LeadingIcon = null;
             this.txt_nombre_implemento.Location = new System.Drawing.Point(291, 124);
@@ -258,24 +285,12 @@
             this.txt_nombre_implemento.Text = "";
             this.txt_nombre_implemento.TrailingIcon = null;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Código Implemento";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Cantidad prestada";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
             // txt_existencias
             // 
             this.txt_existencias.AnimateReadOnly = false;
             this.txt_existencias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_existencias.Depth = 0;
-            this.txt_existencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_existencias.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_existencias.Hint = "existencias";
             this.txt_existencias.LeadingIcon = null;
             this.txt_existencias.Location = new System.Drawing.Point(13, 123);
@@ -287,6 +302,41 @@
             this.txt_existencias.TabIndex = 15;
             this.txt_existencias.Text = "";
             this.txt_existencias.TrailingIcon = null;
+            // 
+            // dbs_prestamos_deportivosDataSet2
+            // 
+            this.dbs_prestamos_deportivosDataSet2.DataSetName = "dbs_prestamos_deportivosDataSet2";
+            this.dbs_prestamos_deportivosDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblimplementosBindingSource
+            // 
+            this.tblimplementosBindingSource.DataMember = "tbl_implementos";
+            this.tblimplementosBindingSource.DataSource = this.dbs_prestamos_deportivosDataSet2;
+            // 
+            // tbl_implementosTableAdapter
+            // 
+            this.tbl_implementosTableAdapter.ClearBeforeFill = true;
+            // 
+            // cantidadDataGridViewTextBoxColumn
+            // 
+            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dbs_prestamos_deportivosDataSet3
+            // 
+            this.dbs_prestamos_deportivosDataSet3.DataSetName = "dbs_prestamos_deportivosDataSet3";
+            this.dbs_prestamos_deportivosDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbldetprestamosBindingSource
+            // 
+            this.tbldetprestamosBindingSource.DataMember = "tbl_det_prestamos";
+            this.tbldetprestamosBindingSource.DataSource = this.dbs_prestamos_deportivosDataSet3;
+            // 
+            // tbl_det_prestamosTableAdapter
+            // 
+            this.tbl_det_prestamosTableAdapter.ClearBeforeFill = true;
             // 
             // frm_prestamos
             // 
@@ -309,7 +359,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frm_prestamos";
             this.Text = "FORMULARIO PRESTAMOS";
+            this.Load += new System.EventHandler(this.frm_prestamos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_prestamo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblimplementosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbs_prestamos_deportivosDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbldetprestamosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +386,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private MaterialSkin.Controls.MaterialTextBox txt_existencias;
+        private dbs_prestamos_deportivosDataSet2 dbs_prestamos_deportivosDataSet2;
+        private System.Windows.Forms.BindingSource tblimplementosBindingSource;
+        private dbs_prestamos_deportivosDataSet2TableAdapters.tbl_implementosTableAdapter tbl_implementosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
+        private dbs_prestamos_deportivosDataSet3 dbs_prestamos_deportivosDataSet3;
+        private System.Windows.Forms.BindingSource tbldetprestamosBindingSource;
+        private dbs_prestamos_deportivosDataSet3TableAdapters.tbl_det_prestamosTableAdapter tbl_det_prestamosTableAdapter;
     }
 }
