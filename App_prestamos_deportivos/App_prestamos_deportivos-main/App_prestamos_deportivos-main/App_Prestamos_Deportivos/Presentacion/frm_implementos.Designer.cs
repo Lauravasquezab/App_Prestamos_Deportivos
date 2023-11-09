@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_implementos));
             this.txt_codigo = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_nombre = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_cantidad = new MaterialSkin.Controls.MaterialTextBox();
@@ -36,6 +37,8 @@
             this.btn_guardar = new MaterialSkin.Controls.MaterialButton();
             this.btn_actualizar = new MaterialSkin.Controls.MaterialButton();
             this.txt_descripcion = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_codigo
@@ -197,12 +200,23 @@
             this.txt_descripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_descripcion.UseSystemPasswordChar = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(636, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(252, 228);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_implementos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(630, 274);
+            this.ClientSize = new System.Drawing.Size(900, 291);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.btn_guardar);
@@ -216,6 +230,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FORMULARIO IMPLEMENTOS";
             this.Load += new System.EventHandler(this.frm_implementos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,5 +246,6 @@
         private MaterialSkin.Controls.MaterialButton btn_guardar;
         private MaterialSkin.Controls.MaterialButton btn_actualizar;
         private MaterialSkin.Controls.MaterialMultiLineTextBox2 txt_descripcion;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

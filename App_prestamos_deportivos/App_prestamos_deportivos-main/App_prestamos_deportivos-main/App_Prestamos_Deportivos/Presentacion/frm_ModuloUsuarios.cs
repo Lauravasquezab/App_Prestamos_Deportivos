@@ -35,5 +35,55 @@ namespace Presentacion
 
             obj_guardar.fnt_guardar(id, pnombre, snombre, papellido, sapellido, contacto, correo, direccion, sexo);
         }
+
+        private void frm_ModuloUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_pnombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_snombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_papellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_sapellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_contacto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_correo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbx_sexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_direccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
