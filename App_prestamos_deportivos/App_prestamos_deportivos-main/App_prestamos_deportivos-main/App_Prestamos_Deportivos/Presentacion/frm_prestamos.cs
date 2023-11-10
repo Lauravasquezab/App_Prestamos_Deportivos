@@ -96,5 +96,15 @@ namespace Presentacion
             this.tbl_implementosTableAdapter.Fill(this.dbs_prestamos_deportivosDataSet2.tbl_implementos);
 
         }
+
+        private void dtg_prestamo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txt_codigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

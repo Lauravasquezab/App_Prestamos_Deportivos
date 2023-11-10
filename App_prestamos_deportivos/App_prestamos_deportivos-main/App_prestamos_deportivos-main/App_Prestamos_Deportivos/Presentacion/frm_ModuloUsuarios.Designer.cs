@@ -297,7 +297,6 @@
             // 
             this.cbx_sexo.AutoResize = false;
             this.cbx_sexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbx_sexo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.tblsexoBindingSource1, "PKId", true));
             this.cbx_sexo.DataSource = this.tblsexoBindingSource1;
             this.cbx_sexo.Depth = 0;
             this.cbx_sexo.DisplayMember = "Nombre";

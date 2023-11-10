@@ -46,7 +46,6 @@
             this.dbs_prestamos_deportivosDataSet2 = new Presentacion.dbs_prestamos_deportivosDataSet2();
             this.tblimplementosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_implementosTableAdapter = new Presentacion.dbs_prestamos_deportivosDataSet2TableAdapters.tbl_implementosTableAdapter();
-            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dbs_prestamos_deportivosDataSet3 = new Presentacion.dbs_prestamos_deportivosDataSet3();
             this.tbldetprestamosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_det_prestamosTableAdapter = new Presentacion.dbs_prestamos_deportivosDataSet3TableAdapters.tbl_det_prestamosTableAdapter();
@@ -93,6 +92,7 @@
             this.txt_codigo.TabIndex = 2;
             this.txt_codigo.Text = "";
             this.txt_codigo.TrailingIcon = null;
+            this.txt_codigo.TextChanged += new System.EventHandler(this.txt_codigo_TextChanged);
             this.txt_codigo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_codigo_KeyUp);
             // 
             // txt_cantidad_prestamo
@@ -203,21 +203,19 @@
             // 
             this.dtg_prestamo.AllowUserToAddRows = false;
             this.dtg_prestamo.AllowUserToDeleteRows = false;
-            this.dtg_prestamo.AutoGenerateColumns = false;
             this.dtg_prestamo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtg_prestamo.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtg_prestamo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtg_prestamo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_prestamo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
-            this.cantidadDataGridViewTextBoxColumn});
-            this.dtg_prestamo.DataSource = this.tbldetprestamosBindingSource;
+            this.Column2});
             this.dtg_prestamo.Location = new System.Drawing.Point(12, 284);
             this.dtg_prestamo.Name = "dtg_prestamo";
             this.dtg_prestamo.ReadOnly = true;
             this.dtg_prestamo.Size = new System.Drawing.Size(892, 195);
             this.dtg_prestamo.TabIndex = 11;
+            this.dtg_prestamo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_prestamo_CellContentClick);
             // 
             // Column1
             // 
@@ -317,13 +315,6 @@
             // 
             this.tbl_implementosTableAdapter.ClearBeforeFill = true;
             // 
-            // cantidadDataGridViewTextBoxColumn
-            // 
-            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "Cantidad";
-            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
-            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
-            this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // dbs_prestamos_deportivosDataSet3
             // 
             this.dbs_prestamos_deportivosDataSet3.DataSetName = "dbs_prestamos_deportivosDataSet3";
@@ -389,7 +380,6 @@
         private dbs_prestamos_deportivosDataSet2 dbs_prestamos_deportivosDataSet2;
         private System.Windows.Forms.BindingSource tblimplementosBindingSource;
         private dbs_prestamos_deportivosDataSet2TableAdapters.tbl_implementosTableAdapter tbl_implementosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
         private dbs_prestamos_deportivosDataSet3 dbs_prestamos_deportivosDataSet3;
         private System.Windows.Forms.BindingSource tbldetprestamosBindingSource;
         private dbs_prestamos_deportivosDataSet3TableAdapters.tbl_det_prestamosTableAdapter tbl_det_prestamosTableAdapter;

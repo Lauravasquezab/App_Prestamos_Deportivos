@@ -20,20 +20,7 @@ namespace Presentacion
 
         private void btn_guardar_Click(object sender, EventArgs e)
         {
-            //  Negocio.cls_ModuloUsuarios obj_cls_credito_agregar = new Negocio.cls_ModuloUsuarios();
-            //obj_cls_credito_agregar.fnt_guardar
-            //    (
-            //    txt_id.Text,
-            //    txt_pnombre.Text,
-            //    txt_snombre.Text,
-            //    txt_papellido.Text,
-            //    txt_sapellido.Text,
-            //    txt_contacto.Text,
-            //    cbx_sexo.SelectedText,
-            //    txt_correo.Text,
-            //    txt_direccion.Text
-
-            //    );
+           
             cls_ModuloUsuarios obj_guardar = new cls_ModuloUsuarios();
 
             string id = txt_id.Text;
@@ -41,7 +28,7 @@ namespace Presentacion
             string snombre = txt_snombre.Text;
             string papellido = txt_papellido.Text;
             string sapellido = txt_sapellido.Text;
-            string sexo = cbx_sexo.SelectedValue.ToString();
+            string sexo = Convert.ToString(cbx_sexo.SelectedValue);
             string contacto = txt_contacto.Text;
             string correo = txt_correo.Text;
             string direccion = txt_direccion.Text;
